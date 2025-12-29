@@ -1,0 +1,48 @@
+:root {
+  --black: #000;
+  --white: #fff;
+  --gray: #1a1a1a;
+  --green: #00ff88;
+  --yellow: #ffd500;
+  --red: #ff4444;
+  --blue: #4da3ff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--black);
+  color: var(--white);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  background: transparent;
+  border: 1px solid var(--white);
+  color: var(--white);
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+/* 📱 MOBILE FIRST */
+@media (max-width: 768px) {
+  table {
+    font-size: 12px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
